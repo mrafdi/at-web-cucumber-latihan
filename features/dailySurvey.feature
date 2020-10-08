@@ -7,3 +7,5 @@ Feature: AT WEB Test
         When I check the agreement and click next
         And I fill my name with "Muhammad Rafdi" and NPK with "7204"
         And I fill the rest of the questionnaire
+        And I click Submit button
+        Then I can see "Thank you." message
