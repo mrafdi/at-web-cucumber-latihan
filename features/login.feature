@@ -1,7 +1,7 @@
 Feature: AT WEB Test
     QA Test for AT website
 
-    @positive @signIn
+    @positive @login
     Scenario: I login to iServe website
         Given I open iServe website
         When I do login at iServe website
