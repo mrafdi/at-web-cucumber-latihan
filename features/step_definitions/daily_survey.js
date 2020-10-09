@@ -54,7 +54,7 @@ When(/I click Submit button/, async () => {
     await driver.sleep(3000);
 })
 
-Then(/I can see "([^"]*) message"$/, async (item)  => {
+Then(/I can see "([^"]*)" message$/, async (item)  => {
     let wording = await driver.findElement({css:"div.questionnaire_thank-you h3"}).getText();
     await assert.ok(wording.includes(item));
     await driver.sleep(2000);
