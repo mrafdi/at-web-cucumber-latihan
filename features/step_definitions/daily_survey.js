@@ -60,6 +60,6 @@ Then(/I can see "([^"]*)" message$/, async (item)  => {
     await driver.sleep(2000);
 })
 
-AfterAll('end session', async function () {
-    await driver.quit();
-});
+// AfterAll('end session', async function () {
+//     await driver.quit();
+// });
